@@ -19,7 +19,7 @@ export const InquiryForm = () => {
   return (
     <form
       action={handleSubmit}
-      className="flex flex-col gap-y-12 col-span-5 lg:col-span-3"
+      className="flex flex-col gap-y-12 col-span-5 lg:col-span-3 text-blue-950"
       ref={formRef}
     >
       <div className="grid grid-cols-1 gap-y-6 gap-x-8 text-sm md:text-base">

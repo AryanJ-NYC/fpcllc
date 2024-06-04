@@ -7,7 +7,7 @@ import { InquiryForm } from './InquiryForm';
 export default function Home() {
   return (
     <main className="min-h-full">
-      <HomeSection className="bg-cyan-50 flex flex-col-reverse md:flex-row relative lg:pr-0 lg:pl-32 xl:pl-96">
+      <HomeSection className="bg-blue-50 flex flex-col-reverse md:flex-row relative lg:pr-0 lg:pl-32 xl:pl-96">
         <div className="flex flex-col md:absolute md:top-1/4 md:left-4 lg:left-16 xl:left-32 gap-y-6 py-12 px-16 md:py-16 md:px-8 bg-blue-950 items-center">
           <p className="font-serif text-blue-100 text-2xl md:max-w-96">
             The Global Leader in Residence and Citizenship by Investment
@@ -32,20 +32,20 @@ export default function Home() {
         />
       </HomeSection>
       <HomeSection
-        className="grid grid-cols-5 bg-blue-50 px-8 lg:px-16 xl:px-24 py-16 gap-y-8 gap-x-16"
+        className="grid grid-cols-5 bg-blue-100 px-8 lg:px-16 xl:px-24 py-16 gap-y-8 gap-x-16"
         id="contact-us"
       >
         <div className="flex flex-col gap-y-1 col-span-5">
-          <h2 className="font-serif text-2xl text-slate-950">Contact Us Today</h2>
-          <p className="text-blue-950">
+          <h2 className="font-serif text-3xl text-blue-950">Contact Us Today</h2>
+          <p className="text-blue-900 text-sm">
             Fill out the form below and we&apos;ll get back to you as soon as possible.
           </p>
         </div>
 
         <InquiryForm />
 
-        <div className="grid grid-rows-2 items-center lg:col-span-2 gap-y-16 text-blue-700">
-          <a href="mailto:FirstPointConsulting@protonmail.com">
+        <div className="flex flex-col gap-y-8 lg:gap-y-16 col-span-5 lg:col-span-2 text-blue-800">
+          <a className="flex flex-col" href="mailto:FirstPointConsulting@protonmail.com">
             <Mail size={32} />
             <p className="font-bold">Email</p>
             <p>FirstPointConsulting@protonmail.com</p>
