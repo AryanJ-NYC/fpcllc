@@ -7,7 +7,7 @@ import { InquiryForm } from './InquiryForm';
 export default function Home() {
   return (
     <main className="min-h-full">
-      <HomeSection className="bg-blue-50 flex flex-col-reverse md:flex-row relative lg:pr-0 lg:pl-32 xl:pl-96">
+      <HomeSection className="bg-blue-50 flex flex-col-reverse md:flex-row relative lg:pr-0 lg:pl-32 xl:pl-96 2xl:h-[80vh]">
         <div className="flex flex-col md:absolute md:top-1/4 md:left-4 lg:left-16 xl:left-32 gap-y-6 py-12 px-16 md:py-16 md:px-8 bg-blue-950 items-center">
           <p className="font-serif text-blue-100 text-2xl md:max-w-96">
             The Global Leader in Residence and Citizenship by Investment
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <Image
           alt="Portugal landscape"
-          className="object-cover h-3/4 w-full"
+          className="object-cover w-full"
           placeholder="blur"
           src={portugalLandscapeImage}
         />
