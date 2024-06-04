@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
+import { Mail, Phone } from 'lucide-react';
 import portugalLandscapeImage from '../../public/portugal-landscape.webp';
+import { InquiryForm } from './InquiryForm';
 
 export default function Home() {
   return (
@@ -25,11 +27,12 @@ export default function Home() {
         <Image
           alt="Portugal landscape"
           className="object-cover h-3/4 w-full"
+          placeholder="blur"
           src={portugalLandscapeImage}
         />
       </HomeSection>
       <HomeSection
-        className="grid grid-cols-5 bg-blue-50 px-8 lg:px-16 xl:px-24 py-16 gap-y-8"
+        className="grid grid-cols-5 bg-blue-50 px-8 lg:px-16 xl:px-24 py-16 gap-y-8 gap-x-16"
         id="contact-us"
       >
         <div className="flex flex-col gap-y-1 col-span-5">
@@ -39,37 +42,19 @@ export default function Home() {
           </p>
         </div>
 
-        <form className="flex flex-col gap-y-12 col-span-5 lg:col-span-3 xl:col-span-2">
-          <div className="grid grid-cols-1 gap-y-6 gap-x-8 text-sm md:text-base">
-            <div className="flex flex-col gap-y-6">
-              <InputLabel>
-                Your Name
-                <Input />
-              </InputLabel>
-              <InputLabel>
-                Your Phone Number
-                <Input type="tel" />
-              </InputLabel>
-              <InputLabel>
-                Your Email Address
-                <Input type="email" />
-              </InputLabel>
-            </div>
-            <InputLabel>
-              Anything Else You&apos;d Like to Tell Us
-              <TextArea />
-            </InputLabel>
-          </div>
-          <button
-            className="bg-anzac-400 w-full px-16 py-4 rounded-sm font-serif text-xl font-medium tracking-widest self-end"
-            type="submit"
-          >
-            Get in Touch
-          </button>
-        </form>
+        <InquiryForm />
 
-        <div>
-          <p>CONTACT INFO HERE</p>
+        <div className="grid grid-rows-2 items-center lg:col-span-2 gap-y-16 text-blue-700">
+          <a href="mailto:FirstPointConsulting@protonmail.com">
+            <Mail size={32} />
+            <p className="font-bold">Email</p>
+            <p>FirstPointConsulting@protonmail.com</p>
+          </a>
+          <a href="tel:5555555555">
+            <Phone size={32} />
+            <p className="font-bold">Phone</p>
+            <p>(555) 555-5555</p>
+          </a>
         </div>
       </HomeSection>
     </main>
@@ -79,34 +64,3 @@ export default function Home() {
 const HomeSection = (
   props: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>
 ) => <section {...props} className={twMerge(props.className)} />;
-
-const InputLabel = (
-  props: React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>
-) => <label {...props} className={twMerge('flex flex-col gap-y-0.5', props.className)} />;
-
-const Input = (
-  props: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
-) => (
-  <input
-    {...props}
-    className={twMerge(
-      'border border-slate-500 focus:border-slate-800 rounded-sm py-1 px-2',
-      props.className
-    )}
-  />
-);
-
-const TextArea = (
-  props: React.DetailedHTMLProps<
-    React.TextareaHTMLAttributes<HTMLTextAreaElement>,
-    HTMLTextAreaElement
-  >
-) => (
-  <textarea
-    {...props}
-    className={twMerge(
-      'border border-slate-500 focus:border-slate-800 rounded-sm h-36 p-2',
-      props.className
-    )}
-  />
-);

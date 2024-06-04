@@ -2,6 +2,7 @@ import { clsx } from 'clsx';
 import type { Metadata } from 'next';
 import './globals.css';
 import { Playfair_Display } from 'next/font/google';
+import { Toaster } from 'react-hot-toast';
 
 const playfairDisplay = Playfair_Display({
   display: 'swap',
@@ -22,10 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={clsx(playfairDisplay.variable)}>
       <body className={clsx('min-h-screen')}>
-        <header>
+        {/* <header>
           <h1>I AM LOGO</h1>
-        </header>
+        </header> */}
         {children}
+        <Toaster />
       </body>
     </html>
   );
