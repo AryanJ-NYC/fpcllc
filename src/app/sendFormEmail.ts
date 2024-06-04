@@ -13,23 +13,15 @@ export const sendFormEmail = async (formData: FormData) => {
   const subject = 'New customer inquiry';
   const text = `New message from ${name}
 
-  Email: ${email ? email : 'N/A'}
-  Phone: ${phone ? phone : 'N/A'}
+Email: ${email ? email : 'N/A'}
+Phone: ${phone ? phone : 'N/A'}
 
-  ${message}`;
+${message}`;
 
-  await Promise.all([
-    resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'aryanjabbari@gmail.com',
-      subject,
-      text,
-    }),
-    resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'FirstPointConsulting@protonmail.com',
-      subject,
-      text,
-    }),
-  ]);
+  await resend.emails.send({
+    from: 'din@mail.firstpointconsultingllc.com',
+    to: ['aryanjabbari@gmail.com', 'FirstPointConsulting@protonmail.com'],
+    subject,
+    text,
+  });
 };
