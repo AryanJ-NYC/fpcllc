@@ -27,6 +27,7 @@ export default function RootLayout({
         <header>
           <nav>
             <Link href="/our-services">Our Services</Link>
+            <Link href="/benefits-of-portugal">Benefits of Portugal</Link>
           </nav>
         </header>
         {children}

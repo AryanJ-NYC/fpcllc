@@ -1,23 +1,14 @@
-import Image from 'next/image';
 import React from 'react';
 import whatWeOfferImg from '../../../public/what-we-offer.webp';
+import { PageSplashHeader } from '../PageSplashHeader';
 
 export const OurServices = () => {
   return (
     <main className="min-h-full">
-      <div className="flex relative">
-        <Image
-          alt="Rossio Square"
-          className="object-cover max-h-96 w-full"
-          placeholder="blur"
-          src={whatWeOfferImg}
-        />
-        <div className="absolute top-0 left-0 w-full h-full bg-black/30" />
-        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl md:text-6xl font-serif tracking-widest text-blue-50 text-center w-full">
-          What We Offer
-        </h1>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-16 px-2 md:px-12">
+      <PageSplashHeader alt="What We Offer" src={whatWeOfferImg}>
+        What We Offer
+      </PageSplashHeader>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-16 px-2 md:px-12 xl:px-48">
         <Card>
           <H2>Residency Planning and Consultation</H2>
           <div className="flex flex-col gap-y-4">
