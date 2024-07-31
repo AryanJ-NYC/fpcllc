@@ -1,4 +1,4 @@
-import { clsx } from 'clsx';
+import { clsx } from 'clsx/lite';
 import type { Metadata } from 'next';
 import './globals.css';
 import { Playfair_Display } from 'next/font/google';

@@ -2,7 +2,7 @@ import React from 'react';
 import whatWeOfferImg from '../../../public/what-we-offer.webp';
 import { PageSplashHeader } from '../PageSplashHeader';
 
-export const OurServices = () => {
+const OurServices = () => {
   return (
     <div>
       <PageSplashHeader alt="What We Offer" src={whatWeOfferImg}>
