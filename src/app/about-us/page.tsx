@@ -27,7 +27,7 @@ const AboutUs = () => {
           </p>
         </div>
       </PageSection>
-      <PageSection className="grid grid-cols-1 md:grid-cols-2 items-center">
+      <PageSection className="grid-cols-1 md:grid-cols-2 items-center">
         <h2 className="font-serif text-3xl text-blue-950">
           Discover Portugal with First Point Consulting
         </h2>

@@ -12,7 +12,7 @@ const BenefitsOfPortugal = () => {
       <PageSplashHeader alt="Marginal Predios" src={marginalPrediosImg}>
         Benefits of Portugal
       </PageSplashHeader>
-      <PageSection>
+      <PageSection className="grid-cols-1 lg:grid-cols-2 items-center">
         <InfoBulletsContainer>
           <p>
             High Quality of Life: Portugal offers a high standard of living with excellent
@@ -46,7 +46,7 @@ const BenefitsOfPortugal = () => {
           src={praiaDaBordeiraImg}
         />
       </PageSection>
-      <PageSection>
+      <PageSection className="grid-cols-1 lg:grid-cols-2 items-center">
         <Image
           alt="Lisbon Skyline"
           className="object-cover w-full md:rounded-md"
