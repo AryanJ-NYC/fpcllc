@@ -4,9 +4,9 @@ import { PageSplashHeader } from '../PageSplashHeader';
 
 export const OurServices = () => {
   return (
-    <main className="min-h-full">
+    <div>
       <PageSplashHeader alt="What We Offer" src={whatWeOfferImg}>
-        What We Offer
+        Our Services
       </PageSplashHeader>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-16 px-2 md:px-12 xl:px-48">
         <Card>
@@ -66,7 +66,7 @@ export const OurServices = () => {
           </div>
         </Card>
       </div>
-    </main>
+    </div>
   );
 };
 

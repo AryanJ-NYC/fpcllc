@@ -4,6 +4,7 @@ import './globals.css';
 import { Playfair_Display } from 'next/font/google';
 import { Toaster } from 'react-hot-toast';
 import Link from 'next/link';
+import { ContactUs } from './ContactUs';
 
 const playfairDisplay = Playfair_Display({
   display: 'swap',
@@ -25,12 +26,22 @@ export default function RootLayout({
     <html lang="en" className={clsx(playfairDisplay.variable)}>
       <body className={clsx('min-h-screen')}>
         <header>
-          <nav>
-            <Link href="/our-services">Our Services</Link>
-            <Link href="/benefits-of-portugal">Benefits of Portugal</Link>
+          <nav className="flex flex-row justify-end">
+            <Link className="px-4 py-8" href="/our-services">
+              Our Services
+            </Link>
+            <Link className="px-4 py-8" href="/benefits-of-portugal">
+              Benefits of Portugal
+            </Link>
+            <Link className="px-4 py-8" href="/about-us">
+              About Us
+            </Link>
           </nav>
         </header>
-        {children}
+        <main className="min-h-full">
+          {children}
+          <ContactUs />
+        </main>
         <Toaster />
       </body>
     </html>

@@ -1,18 +1,18 @@
+import Image from 'next/image';
 import React from 'react';
+import { PageSection } from '../PageSection';
 import { PageSplashHeader } from '../PageSplashHeader';
 import marginalPrediosImg from '../../../public/marginal-predios.webp';
-import portoPortugalImg from '../../../public/porto-portugal.webp';
 import praiaDaBordeiraImg from '../../../public/praia-da-bordeira-algarve-portugal.webp';
 import lisbonCitySkylineImg from '../../../public/lisbon-portugal-city-skyline.webp';
-import Image from 'next/image';
 
 const BenefitsOfPortugal = () => {
   return (
-    <main className="min-h-full">
+    <div className="flex flex-col">
       <PageSplashHeader alt="Marginal Predios" src={marginalPrediosImg}>
         Benefits of Portugal
       </PageSplashHeader>
-      <Section>
+      <PageSection>
         <InfoBulletsContainer>
           <p>
             High Quality of Life: Portugal offers a high standard of living with excellent
@@ -41,15 +41,15 @@ const BenefitsOfPortugal = () => {
         </InfoBulletsContainer>
         <Image
           alt="Praia da Bordeira"
-          className="w-full"
+          className="object-cover w-full md:rounded-md"
           placeholder="blur"
           src={praiaDaBordeiraImg}
         />
-      </Section>
-      <Section>
+      </PageSection>
+      <PageSection>
         <Image
           alt="Lisbon Skyline"
-          className="w-full"
+          className="object-cover w-full md:rounded-md"
           placeholder="blur"
           src={lisbonCitySkylineImg}
         />
@@ -75,8 +75,8 @@ const BenefitsOfPortugal = () => {
             it easy to travel within Europe and beyond.
           </p>
         </InfoBulletsContainer>
-      </Section>
-    </main>
+      </PageSection>
+    </div>
   );
 };
 
@@ -85,18 +85,7 @@ const InfoBulletsContainer = (
 ) => {
   return (
     <div
-      className="flex flex-col justify-evenly gap-y-8 px-2 md:px-4 order-2 md:order-none"
-      {...props}
-    />
-  );
-};
-
-const Section = (
-  props: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
-) => {
-  return (
-    <div
-      className="odd:bg-red-50 even:bg-green-50 flex flex-col md:flex-row gap-x-2 gap-y-4 py-4"
+      className="flex flex-col justify-evenly gap-y-8 order-2 lg:order-none px-2 lg:px-0"
       {...props}
     />
   );
