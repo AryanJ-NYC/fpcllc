@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { InquiryForm } from './InquiryForm';
 
 export const ContactUs = () => {
@@ -23,11 +23,13 @@ export const ContactUs = () => {
           <p className="font-bold">Email</p>
           <p>FirstPointConsulting@protonmail.com</p>
         </a>
-        <a href="tel:5555555555">
-          <Phone size={32} />
-          <p className="font-bold">Phone</p>
-          <p>(555) 555-5555</p>
-        </a>
+        <div>
+          <MapPin size={32} />
+          <p className="font-bold">Mail</p>
+          <p>PO Box 1281</p>
+          <p>Manorville, NY 11949</p>
+          <p>United States</p>
+        </div>
       </div>
     </div>
   );

@@ -1,11 +1,17 @@
 import { clsx } from 'clsx/lite';
 import type { Metadata } from 'next';
 import './globals.css';
-import { Playfair_Display } from 'next/font/google';
+import { Lato, Playfair_Display } from 'next/font/google';
 import { Toaster } from 'react-hot-toast';
 import Link from 'next/link';
 import { ContactUs } from './ContactUs';
 
+const lato = Lato({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '700', '900'],
+  variable: '--font-lato',
+});
 const playfairDisplay = Playfair_Display({
   display: 'swap',
   subsets: ['latin'],
@@ -23,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={clsx(playfairDisplay.variable)}>
-      <body className={clsx('min-h-screen')}>
+    <html lang="en" className={clsx(lato.variable, playfairDisplay.variable)}>
+      <body className="min-h-screen text-slate-900">
         <header>
           <nav className="flex flex-row justify-end">
             <Link className="px-4 py-8" href="/our-services">

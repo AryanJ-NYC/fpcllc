@@ -24,6 +24,7 @@ const config: Config = {
         },
       },
       fontFamily: {
+        sans: ['var(--font-lato)'],
         serif: ['var(--font-playfair-display)'],
       },
     },

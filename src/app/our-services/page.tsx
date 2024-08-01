@@ -13,7 +13,7 @@ const OurServices = () => {
           <H2>Residency Planning and Consultation</H2>
           <div className="flex flex-col gap-y-4">
             <p>
-              <span className="font-medium">Portugal Residency Expertise:</span> Tailored advice on
+              <span className="font-bold">Portugal Residency Expertise:</span> Tailored advice on
               the best residency options in Portugal, including the popular Golden Visa program and
               other visa options for retirees and remote workers.
             </p>
