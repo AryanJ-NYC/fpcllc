@@ -12,19 +12,28 @@ const AboutUs = () => {
       <PageSection className="grid grid-cols-1 md:grid-cols-2 items-center">
         <h2 className="font-serif text-3xl text-blue-950">Why Choose First Point Consulting?</h2>
         <div className="flex flex-col gap-y-4">
-          <p>
-            Professionalism: Our team on the ground in Lisbon is attentive and responsive. We pride
-            ourselves in providing the service we would want for ourselves to each of our clients.
-          </p>
-          <p>
-            Expertise in Portugal: Our team of professionals has extensive experience in Portuguese
-            law, finance, and cultural integration, ensuring you receive the highest quality advice
-            and support tailored to Portugal.
-          </p>
-          <p>
-            Personalized Approach: We understand that each individual&apos;s journey is unique, and
-            we tailor our services to meet your specific needs and aspirations in Portugal.
-          </p>
+          <div>
+            <p className="font-bold">Professionalism</p>
+            <p>
+              Our team on the ground in Lisbon is attentive and responsive. We pride ourselves in
+              providing the service we would want for ourselves to each of our clients.
+            </p>
+          </div>
+          <div>
+            <p className="font-bold">Expertise in Portugal</p>
+            <p>
+              Our team of professionals has extensive experience in Portuguese law, finance, and
+              cultural integration, ensuring you receive the highest quality advice and support
+              tailored to Portugal.
+            </p>
+          </div>
+          <div>
+            <p className="font-bold">Personalized Approach</p>
+            <p>
+              We understand that each individual&apos;s journey is unique, and we tailor our
+              services to meet your specific needs and aspirations in Portugal.
+            </p>
+          </div>
         </div>
       </PageSection>
       <PageSection className="grid-cols-1 md:grid-cols-2 items-center">

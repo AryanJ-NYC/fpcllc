@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Lato, Playfair_Display } from 'next/font/google';
 import { Toaster } from 'react-hot-toast';
-import Link from 'next/link';
 import { ContactUs } from './ContactUs';
+import { HeaderLink } from './HeaderLink';
 
 const lato = Lato({
   display: 'swap',
@@ -33,15 +33,15 @@ export default function RootLayout({
       <body className="min-h-screen text-slate-900">
         <header>
           <nav className="flex flex-row justify-end">
-            <Link className="px-4 py-8" href="/our-services">
+            <HeaderLink className="px-4 py-8" href="/our-services">
               Our Services
-            </Link>
-            <Link className="px-4 py-8" href="/benefits-of-portugal">
+            </HeaderLink>
+            <HeaderLink className="px-4 py-8" href="/benefits-of-portugal">
               Benefits of Portugal
-            </Link>
-            <Link className="px-4 py-8" href="/about-us">
+            </HeaderLink>
+            <HeaderLink className="px-4 py-8" href="/about-us">
               About Us
-            </Link>
+            </HeaderLink>
           </nav>
         </header>
         <main className="min-h-full">
