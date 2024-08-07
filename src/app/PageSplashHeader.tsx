@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { PropsWithChildren } from 'react';
+import type { ComponentProps, PropsWithChildren } from 'react';
 
 export const PageSplashHeader = ({ alt, children, src }: PropsWithChildren<Props>) => {
   return (
@@ -13,4 +13,4 @@ export const PageSplashHeader = ({ alt, children, src }: PropsWithChildren<Props
   );
 };
 
-type Props = Pick<React.ComponentProps<typeof Image>, 'alt' | 'src'>;
+type Props = Pick<ComponentProps<typeof Image>, 'alt' | 'src'>;
