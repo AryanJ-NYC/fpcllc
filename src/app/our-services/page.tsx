@@ -27,8 +27,8 @@ const OurServices = () => {
           <H2>Legal and Financial Services</H2>
           <div className="flex flex-col gap-y-4">
             <p>
-              Expert assistance with visa applications, tax planning, and legal requirements
-              specific to Portugal, ensuring smooth transitions.
+              Expert assistance with visa applications and legal requirements specific to Portugal,
+              ensuring smooth transitions.
             </p>
             <p>
               Strategies to optimize your financial sovereignty and protect your assets
