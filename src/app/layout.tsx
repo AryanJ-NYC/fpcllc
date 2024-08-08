@@ -6,6 +6,7 @@ import { Toaster } from 'react-hot-toast';
 import { ContactUs } from './ContactUs';
 import { HeaderLink } from './HeaderLink';
 import Link from 'next/link';
+import type { PropsWithChildren } from 'react';
 
 const greyQo = Grey_Qo({
   display: 'swap',
@@ -32,28 +33,21 @@ export const metadata: Metadata = {
   description: 'First Point Consulting is here to help you find paradise.',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en" className={clsx(greyQo.variable, lato.variable, playfairDisplay.variable)}>
       <body className="min-h-screen">
         <header className="flex justify-between text-blue-900">
-          <Link className="flex items-center font-grey-qo px-4 text-6xl tracking-widest" href="/">
+          <Link
+            className="flex items-center font-grey-qo px-2 sm:px-4 text-4xl sm:text-6xl tracking-widest"
+            href="/"
+          >
             FPC
           </Link>
           <nav className="flex flex-row justify-end">
-            <HeaderLink className="px-4 py-6" href="/our-services">
-              Our Services
-            </HeaderLink>
-            <HeaderLink className="px-4 py-6" href="/benefits-of-portugal">
-              Benefits of Portugal
-            </HeaderLink>
-            <HeaderLink className="px-4 py-6" href="/about-us">
-              About Us
-            </HeaderLink>
+            <HeaderLink href="/our-services">Our Services</HeaderLink>
+            <HeaderLink href="/benefits-of-portugal">Benefits of Portugal</HeaderLink>
+            <HeaderLink href="/about-us">About Us</HeaderLink>
           </nav>
         </header>
         <main className="min-h-full text-slate-900">

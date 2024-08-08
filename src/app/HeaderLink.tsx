@@ -10,7 +10,10 @@ export const HeaderLink = ({ children, href }: React.ComponentProps<typeof Link>
 
   return (
     <Link
-      className={clsx('px-4 py-8', href === pathname && 'underline underline-offset-4')}
+      className={clsx(
+        'px-2 sm:px-4 py-6 sm:py-8 text-sm xs:text-base',
+        href === pathname && 'underline underline-offset-4'
+      )}
       href={href}
     >
       {children}
