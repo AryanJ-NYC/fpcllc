@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
-import { Mail, Phone } from 'lucide-react';
 import portugalLandscapeImage from '../../public/portugal-landscape.webp';
-import { InquiryForm } from './InquiryForm';
 
 export default function Home() {
   return (

@@ -37,7 +37,7 @@ const OurServices = () => {
           </div>
         </Card>
         <Card>
-          <H2>Cultural Integration and Lifestyle Support</H2>
+          <H2>Cultural Integration and Lifestyle Assistance</H2>
           <div className="flex flex-col gap-y-4">
             <p>
               Real estate contacts for various locations in mainland Portugal including Madeira and

@@ -9,8 +9,8 @@ export const ContactUs = () => {
       id="contact-us"
     >
       <div className="flex flex-col gap-y-1 col-span-5">
-        <h2 className="font-serif text-3xl text-blue-950">Contact Us Today</h2>
-        <p className="text-blue-900 text-sm">
+        <h2 className="font-serif text-3xl text-blue-900">Contact Us Today</h2>
+        <p className="text-blue-800 text-sm">
           Fill out the form below and we&apos;ll get back to you as soon as possible.
         </p>
       </div>

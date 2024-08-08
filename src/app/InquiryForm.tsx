@@ -19,7 +19,7 @@ export const InquiryForm = () => {
   return (
     <form
       action={handleSubmit}
-      className="flex flex-col gap-y-12 col-span-5 lg:col-span-3 text-blue-950"
+      className="flex flex-col gap-y-12 col-span-5 lg:col-span-3 text-blue-900"
       ref={formRef}
     >
       <div className="grid grid-cols-1 gap-y-6 gap-x-8 text-sm md:text-base">
@@ -43,7 +43,7 @@ export const InquiryForm = () => {
         </InputLabel>
       </div>
       <button
-        className="bg-anzac-400 w-full px-16 py-4 rounded-sm font-serif text-xl font-medium tracking-widest self-end"
+        className="bg-anzac-400 w-full px-16 py-4 rounded-sm font-serif text-2xl font-medium tracking-widest self-end"
         type="submit"
       >
         Get in Touch
