@@ -24,6 +24,8 @@ const config: Config = {
         },
       },
       fontFamily: {
+        'grey-qo': ['var(--font-grey-qo)'],
+        sans: ['var(--font-lato)'],
         serif: ['var(--font-playfair-display)'],
       },
     },
